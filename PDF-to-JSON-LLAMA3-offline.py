@@ -5,6 +5,7 @@ from pdfminer.high_level import extract_text
 
 app = Flask(__name__)
 llama = Ollama(model="llama3")
+# llama = Ollama(model="phi3")
 
 def extract_pdf_text(pdf_path):
     """
